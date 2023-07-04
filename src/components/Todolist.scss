@@ -1,0 +1,122 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+tr {
+    margin: 0;
+    padding: 0;
+}
+
+tr td {
+    cursor: pointer;
+    position: relative;
+    padding: 12px 8px 12px 40px;
+    background: #eee;
+    font-size: 18px;
+    transition: 0.2s;
+
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+
+tr td:hover {
+    background: #ddd;
+}
+
+tr td.checked {
+   
+    color: black;
+    text-decoration: line-through;
+}
+
+/* Add a "checked" mark when clicked on */
+tr td.checked::before {
+    content: ''; 
+    position: absolute;
+    color: black;
+    border-style: solid;
+    border-width: 0 2px 2px 0;
+    top: 10px;
+    left: 16px;
+    transform: rotate(45deg); 
+    height: 15px;
+    width: 7px;
+}
+
+/* Style the close button */
+
+.close0 span{
+    padding: 7px;
+   
+}
+.close1:hover {
+    background-color: rgb(115, 206, 173);
+    color: white;
+}
+.close2:hover {
+    background-color: rgb(115, 206, 173);
+    color: white;
+}
+
+.close:hover {
+    background-color: rgb(115, 206, 173);
+    color: white;
+}
+
+.header {
+    background-color: rgb(115, 206, 173);
+    padding: 30px 40px;
+ 
+    text-align: center;
+}
+
+/* Clear floats after the header */
+.header:after {
+    content: "";
+    display: table;
+    clear: both; //xóa các float nổi bên trái và bân phải của header
+}
+
+input {
+    margin: 0;
+    border: none;
+    border-radius: 0;
+    width: 75%;
+    padding: 10px;
+    float: left;
+    font-size: 16px;
+}
+input[type="file"] {
+    /* color: transparent; */
+    width: 25%;
+}
+
+.total{ padding: 10px;
+   text-align: center;
+        width: 25%;
+      font-weight: bold;
+        color: black;
+        float: right;
+        
+}
+.addBtn {
+    padding: 10px;
+    width: 75%;
+    background: #d9d9d9;
+    color: #555;
+    float: left;
+    text-align: center;
+    font-size: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+    border-radius: 0;
+}
+
+.addBtn:hover {
+    background-color: #bbb;
+}
